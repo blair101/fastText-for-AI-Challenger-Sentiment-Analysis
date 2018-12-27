@@ -1,5 +1,7 @@
 AI Challenger 2018 Sentiment Analysis Baseline with fastText
+
 =========================================
+
 功能描述
 ---
 本项目主要基于AI Challenger官方[baseline](https://github.com/AIChallenger/AI_Challenger_2018/tree/master/Baselines/sentiment_analysis2018_baseline)修改了一个基于fastText的baseline，方便参赛者快速上手比赛，主要功能涵盖完成比赛的全流程，如数据读取、分词、特征提取、模型定义以及封装、
