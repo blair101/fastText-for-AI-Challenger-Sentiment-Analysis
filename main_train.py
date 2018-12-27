@@ -55,7 +55,9 @@ if __name__ == '__main__':
 
     # model train
     logger.info("start train model")
+
     classifier_dict = dict()
+
     for column in columns[2:]:
         train_label = train_data_df[column]
         logger.info("start train %s model" % column)
@@ -68,9 +70,12 @@ if __name__ == '__main__':
 
     logger.info("complete train model")
     logger.info("start save model")
+
     model_path = config.model_path
+
     if not os.path.exists(model_path):
         os.makedirs(model_path)
+
     joblib.dump(classifier_dict, model_path + model_name)
     logger.info("complete svae model")
 
@@ -87,6 +92,7 @@ if __name__ == '__main__':
 
     logger.info("start compute f1 score for validata model")
     f1_score_dict = dict()
+
     for column in columns[2:]:
         true_label = np.asarray(validate_data_df[column])
         classifier = classifier_dict[column]

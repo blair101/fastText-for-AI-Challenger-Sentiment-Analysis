@@ -23,4 +23,10 @@ AI Challenger 2018 Sentiment Analysis Baseline with fastText
 * 配置 在config.py中配置好文件存储路径
 * 训练 运行 python main_train.py -mn your_model_name 训练模型并保存，同时通过日志可以得到验证集的F1_score指标
 * 预测 运行 python main_predict.py -mn your_model_name 通过加载上一步的模型，在测试集上做预测
-* 更多详情请参考我的博客文章：http://www.52nlp.cn/?p=10537
+
+运行方法
+---
+
+```py
+python main_train.py -mn fasttext_wn2_model.pkl -wn 2
+```

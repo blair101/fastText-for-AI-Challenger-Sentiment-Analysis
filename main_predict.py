@@ -34,8 +34,10 @@ if __name__ == '__main__':
     classifier_dict = joblib.load(config.model_path + model_name)
 
     content_test = test_data_df['content']
+
     logger.info("start seg train data")
     content_test = seg_words(content_test)
+
     logger.info("complete seg train data")
 
     logger.info("prepare predict data format")
